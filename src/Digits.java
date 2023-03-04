@@ -27,5 +27,4 @@ public class Digits {
         System.out.println("Сумма нечентных цифр числа " + oddAmount);
         System.out.println("Максимальная цифра числа " + maxDigit);
     }
-
 }

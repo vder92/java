@@ -7,7 +7,6 @@ public class Loop_for {
             }
         }
     }
-
     public static int evenCheck(int i) {
         return i % 4;
     }

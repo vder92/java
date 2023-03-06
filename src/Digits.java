@@ -5,7 +5,7 @@ public class Digits {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите число ");
-        int number = Math.abs((scanner.nextInt()));
+        int number = Math.abs(scanner.nextInt());
         int digitAmount = 0;
         int oddAmount = 0;
         int maxDigit = number % 10;

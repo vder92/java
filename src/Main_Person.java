@@ -5,7 +5,6 @@ public class Main_Person {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите имя ");
         String name = scanner.nextLine();
-
         System.out.print("Введите отчество ");
         String middleName = scanner.nextLine();
 
@@ -25,6 +24,10 @@ public class Main_Person {
 
         System.out.println("Год рождения " + man.bornYear(age));
 
-        System.out.println(man);
+        man.setAge(50);
+
+        System.out.println("Измененный возраст " + man.getAge());
+
+        System.out.println("Измененный год рождения " + man.bornYear(age));
     }
 }

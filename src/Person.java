@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Person {
     private String name;
     private String middleName;
@@ -17,7 +19,10 @@ public class Person {
     }
 
     public void setName(String name) {
-        this.name = name;
+
+        if (!(name.length() == 0)) {
+            this.name = name;
+        }
     }
 
     public String getMiddleName() {
@@ -25,7 +30,9 @@ public class Person {
     }
 
     public void setMiddleName(String middleName) {
-        this.middleName = middleName;
+        if (!(middleName.length() == 0)) {
+            this.middleName = middleName;
+        }
     }
 
     public String getFamilyName() {
@@ -33,7 +40,9 @@ public class Person {
     }
 
     public void setFamilyName(String familyName) {
-        this.familyName = familyName;
+        if (!(familyName.length() == 0)) {
+            this.familyName = familyName;
+        }
     }
 
     public int getAge() {
@@ -41,11 +50,15 @@ public class Person {
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if (age > 0) {
+            this.age = age;
+        }
     }
 
     public int bornYear(int age) {
-        return 2023 - age;
+        LocalDate dt = LocalDate.now();
+        int year = dt.getYear();
+        return year - getAge();
     }
 
     @Override

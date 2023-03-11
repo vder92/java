@@ -22,12 +22,12 @@ public class MainPerson {
 
         System.out.println("Измененное имя " + man.getName());
 
-        System.out.println("Год рождения " + man.bornYear(age));
+        System.out.println("Год рождения " + man.getbornYear(age));
 
         man.setAge(50);
 
         System.out.println("Измененный возраст " + man.getAge());
 
-        System.out.println("Измененный год рождения " + man.bornYear(age));
+        System.out.println("Измененный год рождения " + man.getbornYear(age));
     }
 }

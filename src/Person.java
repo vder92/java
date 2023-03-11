@@ -55,10 +55,10 @@ public class Person {
         }
     }
 
-    public int bornYear(int age) {
+    public int getbornYear(int age) {
         LocalDate dt = LocalDate.now();
         int year = dt.getYear();
-        return year - getAge();
+        return year - this.age;
     }
 
     @Override
